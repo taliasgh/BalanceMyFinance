@@ -78,7 +78,7 @@ public class MonthlyReportActivity extends AppCompatActivity {
         int currentYear = Calendar.getInstance().get(Calendar.YEAR);
         List<String> yearLabels = new ArrayList<>();
         List<Integer> values = new ArrayList<>();
-        for (int year = currentYear - 2; year <= currentYear + 2; year++) {
+        for (int year = currentYear - 6; year <= currentYear + 1; year++) {
             yearLabels.add(String.valueOf(year));
             values.add(year);
         }
