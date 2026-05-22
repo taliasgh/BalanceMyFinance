@@ -61,6 +61,7 @@ public class AddTransactionActivity extends AppCompatActivity {
 
         btnPickDate.setOnClickListener(v -> showDatePicker());
         btnSave.setOnClickListener(v -> saveTransaction());
+        findViewById(R.id.btn_back).setOnClickListener(v -> finish());
     }
 
     private void showDatePicker() {
