@@ -1,3 +1,49 @@
 <resources>
     <string name="app_name">Balance My Finance</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_title">Dashboard</string>
+    <string name="balance_label">Balance</string>
+    <string name="balance_format">%1$.2f</string>
+    <string name="recent_transactions">Recent transactions</string>
+    <string name="no_transactions">No transactions yet</string>
+    <string name="btn_add_transaction">Add transaction</string>
+    <string name="btn_monthly_report">Monthly report</string>
+
+    <!-- Add transaction -->
+    <string name="add_transaction_title">Add transaction</string>
+    <string name="amount_label">Amount</string>
+    <string name="amount_hint">0.00</string>
+    <string name="type_label">Type</string>
+    <string name="income">Income</string>
+    <string name="expense">Expense</string>
+    <string name="category_label">Category</string>
+    <string name="pick_date">Pick date</string>
+    <string name="selected_date_format">Date: %1$s</string>
+    <string name="note_label">Note (optional)</string>
+    <string name="note_hint">Description</string>
+    <string name="btn_save">Save</string>
+    <string name="error_amount_required">Enter an amount greater than 0</string>
+    <string name="error_type_required">Select income or expense</string>
+
+    <!-- Monthly report -->
+    <string name="monthly_report_title">Monthly report</string>
+    <string name="month_label">Month</string>
+    <string name="year_label">Year</string>
+    <string name="btn_show_report">Show report</string>
+    <string name="income_total_format">Income: %1$.2f</string>
+    <string name="expense_total_format">Expense: %1$.2f</string>
+    <string name="net_total_format">Net: %1$.2f</string>
+    <string name="no_transactions_this_month">No transactions this month</string>
+
+    <!-- List row formatting (used in Java) -->
+    <string name="transaction_line_format">%1$s  %2$s  %3$s  %4$.2f</string>
+    <string name="transaction_type_income">+</string>
+    <string name="transaction_type_expense">-</string>
+
+    <!-- Delete dialog -->
+    <string name="delete_dialog_title">Delete transaction?</string>
+    <string name="delete_dialog_message">This cannot be undone.</string>
+    <string name="delete_confirm">Delete</string>
+    <string name="cancel">Cancel</string>
 </resources>
