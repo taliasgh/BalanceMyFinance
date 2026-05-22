@@ -69,6 +69,7 @@ public class MonthlyReportActivity extends AppCompatActivity {
         });
 
         btnShowReport.setOnClickListener(v -> loadReport());
+        findViewById(R.id.btn_back).setOnClickListener(v -> finish());
 
         setSpinnersToCurrentDate();
         loadReport();

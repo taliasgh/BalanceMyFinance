@@ -9,6 +9,7 @@
     <string name="no_transactions">No transactions yet</string>
     <string name="btn_add_transaction">Add transaction</string>
     <string name="btn_monthly_report">Monthly report</string>
+    <string name="btn_back">Back</string>
 
     <!-- Add transaction -->
     <string name="add_transaction_title">Add transaction</string>
