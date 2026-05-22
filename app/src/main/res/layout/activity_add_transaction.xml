@@ -48,18 +48,18 @@
             android:orientation="horizontal">
 
             <RadioButton
-                android:id="@+id/radio_income"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/income" />
-
-            <RadioButton
                 android:id="@+id/radio_expense"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
                 android:checked="true"
                 android:text="@string/expense" />
+
+            <RadioButton
+                android:id="@+id/radio_income"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:text="@string/income" />
         </RadioGroup>
 
         <TextView
