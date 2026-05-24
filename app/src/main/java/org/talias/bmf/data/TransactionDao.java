@@ -4,6 +4,7 @@ import androidx.room.Dao;
 import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.Query;
+import androidx.room.Update;
 
 import java.util.List;
 
@@ -12,6 +13,12 @@ public interface TransactionDao {
 
     @Insert
     long insert(Transaction transaction);
+
+    @Update
+    void update(Transaction transaction);
+
+    @Query("SELECT * FROM transactions WHERE id = :id")
+    Transaction getById(long id);
 
     @Query("SELECT * FROM transactions ORDER BY dateMillis DESC")
     List<Transaction> getAllNewestFirst();

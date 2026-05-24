@@ -64,7 +64,7 @@ public class MonthlyReportActivity extends AppCompatActivity {
         listMonthTransactions.setAdapter(listAdapter);
 
         listMonthTransactions.setOnItemLongClickListener((parent, view, position, id) -> {
-            confirmDelete(displayedTransactions.get(position));
+            showTransactionOptions(displayedTransactions.get(position));
             return true;
         });
 
@@ -155,6 +155,22 @@ public class MonthlyReportActivity extends AppCompatActivity {
         listAdapter.clear();
         listAdapter.addAll(lines);
         listAdapter.notifyDataSetChanged();
+    }
+
+    private void showTransactionOptions(Transaction transaction) {
+        new AlertDialog.Builder(this)
+                .setTitle(R.string.transaction_options_title)
+                .setItems(new CharSequence[]{
+                        getString(R.string.action_edit),
+                        getString(R.string.delete_confirm)
+                }, (dialog, which) -> {
+                    if (which == 0) {
+                        startActivity(AddTransactionActivity.editIntent(this, transaction.id));
+                    } else {
+                        confirmDelete(transaction);
+                    }
+                })
+                .show();
     }
 
     private void confirmDelete(Transaction transaction) {

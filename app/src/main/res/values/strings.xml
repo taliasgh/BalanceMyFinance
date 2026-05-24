@@ -13,6 +13,9 @@
 
     <!-- Add transaction -->
     <string name="add_transaction_title">Add transaction</string>
+    <string name="edit_transaction_title">Edit transaction</string>
+    <string name="action_edit">Edit</string>
+    <string name="transaction_options_title">Transaction</string>
     <string name="amount_label">Amount</string>
     <string name="amount_hint">0.00</string>
     <string name="type_label">Type</string>
@@ -26,6 +29,7 @@
     <string name="btn_save">Save</string>
     <string name="error_amount_required">Enter an amount greater than 0</string>
     <string name="error_type_required">Select income or expense</string>
+    <string name="error_transaction_not_found">Transaction not found</string>
 
     <!-- Monthly report -->
     <string name="monthly_report_title">Monthly report</string>
