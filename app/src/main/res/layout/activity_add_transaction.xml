@@ -53,14 +53,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="true"
-                android:text="@string/expense" />
+                android:text="@string/expense"
+                android:buttonTint="@color/green"/>
 
             <RadioButton
                 android:id="@+id/radio_income"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
-                android:text="@string/income" />
+                android:text="@string/income"
+                android:buttonTint="@color/green"/>
         </RadioGroup>
 
         <TextView
@@ -81,7 +83,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="@string/pick_date" />
+            android:text="@string/pick_date"
+            android:backgroundTint="@color/green"/>
 
         <TextView
             android:id="@+id/text_selected_date"
@@ -111,14 +114,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
-            android:text="@string/btn_save" />
+            android:text="@string/btn_save"
+            android:backgroundTint="@color/green"/>
 
         <Button
             android:id="@+id/btn_back"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="@string/btn_back" />
+            android:text="@string/btn_back"
+            android:backgroundTint="@color/green"/>
 
     </LinearLayout>
 </ScrollView>

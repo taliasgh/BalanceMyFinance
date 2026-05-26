@@ -58,13 +58,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="@string/btn_add_transaction" />
+        android:text="@string/btn_add_transaction"
+        android:backgroundTint="@color/green"/>
 
     <Button
         android:id="@+id/btn_monthly_report"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="@string/btn_monthly_report" />
+        android:text="@string/btn_monthly_report"
+        android:backgroundTint="@color/green"/>
 
 </LinearLayout>
